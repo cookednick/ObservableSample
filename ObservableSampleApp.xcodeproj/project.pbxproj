@@ -3,27 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0194B119267E585600D49BEC /* ObservableSampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194B106267E585400D49BEC /* ObservableSampleAppApp.swift */; };
-		0194B11A267E585600D49BEC /* ObservableSampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194B106267E585400D49BEC /* ObservableSampleAppApp.swift */; };
+		0144B362267E6794000047E2 /* Helper Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0144B361267E6794000047E2 /* Helper Functions.swift */; };
+		0144B366267EA65F000047E2 /* Observable in Frameworks */ = {isa = PBXBuildFile; productRef = 0144B365267EA65F000047E2 /* Observable */; };
+		0194B119267E585600D49BEC /* ObservableSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194B106267E585400D49BEC /* ObservableSampleApp.swift */; };
 		0194B11B267E585600D49BEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194B107267E585400D49BEC /* ContentView.swift */; };
-		0194B11C267E585600D49BEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194B107267E585400D49BEC /* ContentView.swift */; };
 		0194B11D267E585600D49BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0194B108267E585600D49BEC /* Assets.xcassets */; };
-		0194B11E267E585600D49BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0194B108267E585600D49BEC /* Assets.xcassets */; };
+		0194B128267E58BE00D49BEC /* ObservableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194B127267E58BE00D49BEC /* ObservableView.swift */; };
+		0194B12E267E58E100D49BEC /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194B12D267E58E100D49BEC /* StateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0194B106267E585400D49BEC /* ObservableSampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableSampleAppApp.swift; sourceTree = "<group>"; };
+		0144B361267E6794000047E2 /* Helper Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper Functions.swift"; sourceTree = "<group>"; };
+		0194B106267E585400D49BEC /* ObservableSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableSampleApp.swift; sourceTree = "<group>"; };
 		0194B107267E585400D49BEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0194B108267E585600D49BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0194B10D267E585600D49BEC /* ObservableSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0194B110267E585600D49BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0194B115267E585600D49BEC /* ObservableSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0194B117267E585600D49BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0194B118267E585600D49BEC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		0194B127267E58BE00D49BEC /* ObservableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableView.swift; sourceTree = "<group>"; };
+		0194B12D267E58E100D49BEC /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,13 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0194B112267E585600D49BEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0144B366267EA65F000047E2 /* Observable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,16 +44,19 @@
 			children = (
 				0194B105267E585400D49BEC /* Shared */,
 				0194B10F267E585600D49BEC /* iOS */,
-				0194B116267E585600D49BEC /* macOS */,
 				0194B10E267E585600D49BEC /* Products */,
+				0194B131267E593200D49BEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		0194B105267E585400D49BEC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				0194B106267E585400D49BEC /* ObservableSampleAppApp.swift */,
+				0194B106267E585400D49BEC /* ObservableSampleApp.swift */,
 				0194B107267E585400D49BEC /* ContentView.swift */,
+				0194B12D267E58E100D49BEC /* StateView.swift */,
+				0194B127267E58BE00D49BEC /* ObservableView.swift */,
+				0144B361267E6794000047E2 /* Helper Functions.swift */,
 				0194B108267E585600D49BEC /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -68,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				0194B10D267E585600D49BEC /* ObservableSampleApp.app */,
-				0194B115267E585600D49BEC /* ObservableSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,13 +78,11 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		0194B116267E585600D49BEC /* macOS */ = {
+		0194B131267E593200D49BEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0194B117267E585600D49BEC /* Info.plist */,
-				0194B118267E585600D49BEC /* macOS.entitlements */,
 			);
-			path = macOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,25 +101,11 @@
 			dependencies = (
 			);
 			name = "ObservableSampleApp (iOS)";
+			packageProductDependencies = (
+				0144B365267EA65F000047E2 /* Observable */,
+			);
 			productName = "ObservableSampleApp (iOS)";
 			productReference = 0194B10D267E585600D49BEC /* ObservableSampleApp.app */;
-			productType = "com.apple.product-type.application";
-		};
-		0194B114267E585600D49BEC /* ObservableSampleApp (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0194B124267E585600D49BEC /* Build configuration list for PBXNativeTarget "ObservableSampleApp (macOS)" */;
-			buildPhases = (
-				0194B111267E585600D49BEC /* Sources */,
-				0194B112267E585600D49BEC /* Frameworks */,
-				0194B113267E585600D49BEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ObservableSampleApp (macOS)";
-			productName = "ObservableSampleApp (macOS)";
-			productReference = 0194B115267E585600D49BEC /* ObservableSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,9 +120,6 @@
 					0194B10C267E585600D49BEC = {
 						CreatedOnToolsVersion = 12.5;
 					};
-					0194B114267E585600D49BEC = {
-						CreatedOnToolsVersion = 12.5;
-					};
 				};
 			};
 			buildConfigurationList = 0194B104267E585300D49BEC /* Build configuration list for PBXProject "ObservableSampleApp" */;
@@ -153,12 +131,14 @@
 				Base,
 			);
 			mainGroup = 0194B100267E585300D49BEC;
+			packageReferences = (
+				0144B364267EA65F000047E2 /* XCRemoteSwiftPackageReference "Observable" */,
+			);
 			productRefGroup = 0194B10E267E585600D49BEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0194B10C267E585600D49BEC /* ObservableSampleApp (iOS) */,
-				0194B114267E585600D49BEC /* ObservableSampleApp (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -172,14 +152,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0194B113267E585600D49BEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0194B11E267E585600D49BEC /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -188,16 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0194B11B267E585600D49BEC /* ContentView.swift in Sources */,
-				0194B119267E585600D49BEC /* ObservableSampleAppApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0194B111267E585600D49BEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0194B11C267E585600D49BEC /* ContentView.swift in Sources */,
-				0194B11A267E585600D49BEC /* ObservableSampleAppApp.swift in Sources */,
+				0144B362267E6794000047E2 /* Helper Functions.swift in Sources */,
+				0194B12E267E58E100D49BEC /* StateView.swift in Sources */,
+				0194B128267E58BE00D49BEC /* ObservableView.swift in Sources */,
+				0194B119267E585600D49BEC /* ObservableSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 426M7TZQ8Y;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -329,7 +295,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.ObservableSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.ObservableSampleApp;
 				PRODUCT_NAME = ObservableSampleApp;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -343,7 +309,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 426M7TZQ8Y;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -351,60 +317,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.ObservableSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.ObservableSampleApp;
 				PRODUCT_NAME = ObservableSampleApp;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		0194B125267E585600D49BEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 426M7TZQ8Y;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.ObservableSampleApp;
-				PRODUCT_NAME = ObservableSampleApp;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		0194B126267E585600D49BEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 426M7TZQ8Y;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.ObservableSampleApp;
-				PRODUCT_NAME = ObservableSampleApp;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -429,16 +347,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0194B124267E585600D49BEC /* Build configuration list for PBXNativeTarget "ObservableSampleApp (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0194B125267E585600D49BEC /* Debug */,
-				0194B126267E585600D49BEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0144B364267EA65F000047E2 /* XCRemoteSwiftPackageReference "Observable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cookednick/Observable.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0144B365267EA65F000047E2 /* Observable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0144B364267EA65F000047E2 /* XCRemoteSwiftPackageReference "Observable" */;
+			productName = Observable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0194B101267E585300D49BEC /* Project object */;
 }

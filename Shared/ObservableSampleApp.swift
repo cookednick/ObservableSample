@@ -1,5 +1,5 @@
 //
-//  ObservableSampleAppApp.swift
+//  ObservableSampleApp.swift
 //  Shared
 //
 //  Created by Nick on 6/19/21.
@@ -8,9 +8,9 @@
 import SwiftUI
 
 @main
-struct ObservableSampleAppApp: App {
+struct ObservableSampleApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup("@State vs @ObservableObject vs @Observable") {
             ContentView()
         }
     }
