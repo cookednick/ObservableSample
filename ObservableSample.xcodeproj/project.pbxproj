@@ -21,7 +21,7 @@
 		0194B106267E585400D49BEC /* ObservableSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableSampleApp.swift; sourceTree = "<group>"; };
 		0194B107267E585400D49BEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0194B108267E585600D49BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0194B10D267E585600D49BEC /* ObservableSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0194B10D267E585600D49BEC /* ObservableSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0194B110267E585600D49BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0194B127267E58BE00D49BEC /* ObservableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableView.swift; sourceTree = "<group>"; };
 		0194B12D267E58E100D49BEC /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		0194B10E267E585600D49BEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0194B10D267E585600D49BEC /* ObservableSampleApp.app */,
+				0194B10D267E585600D49BEC /* ObservableSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,9 +88,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0194B10C267E585600D49BEC /* ObservableSampleApp (iOS) */ = {
+		0194B10C267E585600D49BEC /* ObservableSample (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0194B121267E585600D49BEC /* Build configuration list for PBXNativeTarget "ObservableSampleApp (iOS)" */;
+			buildConfigurationList = 0194B121267E585600D49BEC /* Build configuration list for PBXNativeTarget "ObservableSample (iOS)" */;
 			buildPhases = (
 				0194B109267E585600D49BEC /* Sources */,
 				0194B10A267E585600D49BEC /* Frameworks */,
@@ -100,12 +100,12 @@
 			);
 			dependencies = (
 			);
-			name = "ObservableSampleApp (iOS)";
+			name = "ObservableSample (iOS)";
 			packageProductDependencies = (
 				0144B365267EA65F000047E2 /* Observable */,
 			);
 			productName = "ObservableSampleApp (iOS)";
-			productReference = 0194B10D267E585600D49BEC /* ObservableSampleApp.app */;
+			productReference = 0194B10D267E585600D49BEC /* ObservableSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0194B104267E585300D49BEC /* Build configuration list for PBXProject "ObservableSampleApp" */;
+			buildConfigurationList = 0194B104267E585300D49BEC /* Build configuration list for PBXProject "ObservableSample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0194B10C267E585600D49BEC /* ObservableSampleApp (iOS) */,
+				0194B10C267E585600D49BEC /* ObservableSample (iOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -295,8 +295,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.ObservableSampleApp;
-				PRODUCT_NAME = ObservableSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.ObservableSample;
+				PRODUCT_NAME = ObservableSample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,8 +317,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.ObservableSampleApp;
-				PRODUCT_NAME = ObservableSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.ObservableSample;
+				PRODUCT_NAME = ObservableSample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0194B104267E585300D49BEC /* Build configuration list for PBXProject "ObservableSampleApp" */ = {
+		0194B104267E585300D49BEC /* Build configuration list for PBXProject "ObservableSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0194B11F267E585600D49BEC /* Debug */,
@@ -338,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0194B121267E585600D49BEC /* Build configuration list for PBXNativeTarget "ObservableSampleApp (iOS)" */ = {
+		0194B121267E585600D49BEC /* Build configuration list for PBXNativeTarget "ObservableSample (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0194B122267E585600D49BEC /* Debug */,

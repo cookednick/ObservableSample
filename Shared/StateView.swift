@@ -1,10 +1,3 @@
-//
-//  StateView.swift
-//  ObservableSampleApp
-//
-//  Created by Nick on 6/19/21.
-//
-
 import SwiftUI
 
 struct StateView: View {

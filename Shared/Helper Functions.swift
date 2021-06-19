@@ -1,10 +1,3 @@
-//
-//  Helper Functions.swift
-//  ObservableSampleApp
-//
-//  Created by Nick on 6/19/21.
-//
-
 import Foundation
 
 func createStrings(_ number: Int) -> [String] {

@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by Nick on 6/19/21.
-//
-
 import SwiftUI
 import Observable
 
