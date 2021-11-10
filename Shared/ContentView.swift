@@ -55,8 +55,8 @@ struct ContentView: View {
 					.foregroundColor(.secondary)
 				}
 				
-				Observing($numberOfStrings) { binding in
-					Slider(value: binding, in: 10...1000, step: 1)
+				Observing(bindingOf: $numberOfStrings) { number in
+					Slider(value: number, in: 10...1000, step: 1)
 				}
 			}
 			.padding()
